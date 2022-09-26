@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'lovelynregular';
+    src: url('/font/lovelyn_free_personal_use-webfont.woff') format('woff2'),
+         url('/font/lovelyn_free_personal_use-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'stay_classy_sldtregular';
+    src: url('/font/stay_classy_sldt-webfont.woff2') format('woff2'),
+         url('/font/stay_classy_sldt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    background-color: #BBE8C4;
+    width: 100%;
+    height: 70px;
+    font-family: 'lovelynregular';
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+
+
+header > a {
+    color:salmon;
+    margin: 0 20px;
+    font-size: 1em;
+}
+
+header .icon {
+    display: none;
+}
+
+.header-img {
+    background-image: url(images/bg_t30_553823_c464603.jpeg);
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+.header-img > .header-titre{
+    text-align: center;
+    color: #BBE8C4;
+    padding-top: 23rem;
+    font-family: 'stay_classy_sldtregular';
+    font-size: 2em;
+}
+.app-content-img {
+    background-image: url(/images/fleur_couronne_2-removebg.png);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #BBE8C4;
+    height: 30rem;
+}
+.app-content-date{
+    padding-top: 11rem;
+}
+
+.app-content-date > p {
+    font-size: 20px;
+    color:salmon;
+    font-family: 'roboto';
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.app-content-date > .date{
+    font-size: 35px;
+}
+
+@media (max-width: 830px)  {
+    header {
+        flex-direction: column;
+        height: 100%;
+        align-items: flex-start;
+        min-height: 70px;
+    }
+    header > a {
+        display: none;
+    }
+    header .icon {
+        display: block;
+        right: 0;
+        font-size: 3em;
+        text-align: center;
+        width: 5% !important;
+        top: 15px;
+        padding: 0 !important;
+        position: fixed;
+        cursor: pointer;
+    }
+    header.navresponsive > a {
+        display: block; 
+        padding: 10px 0;
+        width: 100%;
+    }
+} 
